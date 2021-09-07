@@ -1,11 +1,10 @@
 canavs = document.getElementById("myCanvas");
-ctx = canavs.getContext9("2d"); 
+ctx = canavs.getContext("2d"); 
 
 g_c_w=100;
 g_c_h=75;
 
-background_image = "parkingLot.jpg";
-greencar_image = "car2.png";
+
 
 g_c_y=255;
 g_c_x=5;
@@ -13,11 +12,11 @@ g_c_x=5;
 function add() {
 	background_imgtag = new Image();
     background_imgtag.onload = uploadBackground;
-	background_imgtag.src = background_image;
+	background_imgtag.src = "parkingLot.jpg";
 
 	greencar_imgtag = new Image();
     greencar_imgtag.onload = uploadgreencar;
-	greencar_imgtag.src = greencar_image;
+	greencar_imgtag.src = "car2.png";
 }
 
 function uploadBackground() {
